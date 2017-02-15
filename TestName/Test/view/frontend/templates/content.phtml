@@ -1,0 +1,22 @@
+<?php
+$clients = $this->getData('clients');
+if ($clients):
+?>
+
+<table class="clients data-table">
+    <thead>
+    <th><?php echo 'Id client'?></th>
+    <th><?php echo 'Name client'?></th>
+    <th><?php echo 'Company'?></th>
+    </thead>
+    <?php foreach ( $clients  as $client):?>
+    <tbody>
+        <td><?php echo $client['entity_id']?></td>
+        <td><?php echo $client['firstname'].' '. $client['lastname']?></td>
+        <td><?php echo $client['company']?></td>
+    </tbody>
+    <?php endforeach;?>
+</table>
+<?php else :?>
+<div class = "message info empty"><span><?php echo 'Список клиентов пуст'?></span></div>
+<?php endif?>

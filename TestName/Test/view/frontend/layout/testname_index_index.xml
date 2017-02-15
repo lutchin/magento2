@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="3columns" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_components.xsd">
+    <head>
+    </head>
+    <body>
+<referenceBlock name="content"><block template="content.phtml" class="TestName\Test\Block\Test" name="testname_test_block_test">
+</block></referenceBlock>
+</body></page>
